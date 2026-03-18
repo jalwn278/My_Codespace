@@ -1,0 +1,14 @@
+{% extends "layout1.html" %}
+
+{% block body %}
+
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        {% for sport in placeholder %}
+            <input name="sport" type="checkbox" value="{{ sport }}"> {{ sport }}
+        {% endfor %}
+        <button type="submit">Register</button>
+    </form>
+
+{% endblock %}

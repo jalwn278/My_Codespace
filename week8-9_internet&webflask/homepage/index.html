@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Welcome to Jalwn's website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jalwn</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./now.html">Now</a></li>
+        </ul>
+      </nav>
+      <button onclick="runDarkness()">Darkness</button>
+    </header>
+    <main>
+      <section>
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold text-body-emphasis">Hi! I'm Jalwn</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              I'm a 19 years old freshman who study in China passionate
+              about learning CS, and I found many interesting
+              knowledge and skills when i dived in learning CS50. I'm intended to
+              have a overseas learning experience so I will pay attention not only
+              at my body exerices(I like playing basketball), CS learning, but
+              also in ENGLISH. AKA, I don't have so many words to introduce myself but i
+              will fullfill my life in the future!
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <a href="..about.html">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-sm-3"
+                >
+                  Read My Story ->
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#collection"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">
+                  CS50
+                </h4>
+                <p class="text-body-secondary">
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#gear-fill"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">
+                  English
+                </h4>
+                <p class="text-body-secondary">
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#speedometer"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">
+                  Homework
+                </h4>
+                <p class="text-body-secondary">
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+              <div class="col d-flex flex-column gap-2">
+                <div
+                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                >
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#table"></use>
+                  </svg>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">
+                  Python
+                </h4>
+                <p class="text-body-secondary">
+                  Paragraph of text beneath the heading to explain the heading.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 80vh">
+            <div class="container px-5">
+              <img
+                src="mycat.jpg"
+                class="img-fluid border rounded-3 shadow-lg mb-4 circle-photo"
+                alt="Example image"
+                width="300"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Copyright - Jalwn.2026</footer>
+    <script>
+      function runDarkness(){
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>

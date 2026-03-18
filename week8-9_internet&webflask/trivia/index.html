@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#A').onclick = function() {
+                    this.style.backgroundColor = "green";
+                    document.querySelector('#feedback').innerHTML = "Correct!";
+                };
+                document.querySelector('#B').addEventListener('click', function() {
+                    this.style.backgroundColor="red";
+                    document.querySelector('#feedback').innerHTML = "Incorrect!";
+                });
+                document.querySelector('#C').addEventListener('click', function() {
+                    this.style.backgroundColor="red";
+                    document.querySelector('#feedback').innerHTML = "Incorrect!";
+                });
+                document.querySelector('#D').addEventListener('click', function() {
+                    this.style.backgroundColor="red";
+                    document.querySelector('#feedback').innerHTML = "Incorrect!";
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#check-button').onclick = function() {
+                    event.preventDefault();
+                    let answer = document.querySelector('#user-input').value;
+                    if (answer.trim().toLowerCase() === "japan") {
+                        this.style.backgroundColor="green";
+                        this.parentElement.querySelector('#back').innerHTML = 'Correct!';
+                    }
+                    else {
+                        this.style.backgroundColor="red";
+                        this.parentElement.querySelector('#back').innerHTML = 'Incorrect!';
+                    }
+                };
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>Which company has the most properties among these.</h3>
+                 <button id="A">Wal-Mart</button>
+                 <button id="B">iPhone</button>
+                 <button id="C">Emirate-Fly</button>
+                 <button id="D">Tesla</button>
+                 <p id = "feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>In which country does MinceCraft gain greatest popularity among teenagers. </h3>
+                 <input id = "user-input" autocomplete = "off" autofocus name = "q" placeholder = "" type = "search">
+                 <input id = "check-button" type = "submit" value = "Check Answer">
+                 <p id = "back"></p>
+            </div>
+        </div>
+    </body>
+</html>
